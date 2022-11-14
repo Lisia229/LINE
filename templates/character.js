@@ -1,11 +1,12 @@
 export default {
   type: 'bubble',
+  size: 'micro',
   hero: {
     type: 'image',
-    url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png',
+    url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg',
     size: 'full',
-    aspectRatio: '20:13',
-    aspectMode: 'cover'
+    aspectMode: 'cover',
+    aspectRatio: '320:213'
   },
   body: {
     type: 'box',
@@ -15,13 +16,12 @@ export default {
         type: 'text',
         text: 'Brown Cafe',
         weight: 'bold',
-        size: 'xl'
+        size: 'sm',
+        wrap: true
       },
       {
         type: 'box',
         layout: 'vertical',
-        margin: 'lg',
-        spacing: 'sm',
         contents: [
           {
             type: 'box',
@@ -30,14 +30,40 @@ export default {
             contents: [
               {
                 type: 'text',
-                text: 'Miraina Tower, 4-1-6 Shinjuku, Tokyo',
+                text: '東京旅行',
                 wrap: true,
-                color: '#666666',
-                size: 'sm'
+                color: '#8c8c8c',
+                size: 'xs',
+                flex: 5
               }
             ]
           }
         ]
+      }
+    ],
+    spacing: 'sm',
+    paddingAll: '13px'
+  },
+  footer: {
+    type: 'box',
+    layout: 'vertical',
+    spacing: 'sm',
+    contents: [
+      {
+        type: 'button',
+        style: 'link',
+        height: 'sm',
+        action: {
+          type: 'uri',
+          label: 'WEBSITE',
+          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/'
+        }
+      },
+      {
+        type: 'box',
+        layout: 'vertical',
+        contents: [],
+        margin: 'sm'
       }
     ]
   }

@@ -3,6 +3,11 @@ import 'dotenv/config'
 // 引用 linebot
 import linebot from 'linebot'
 import fetchHot from './textes/fetchHot.js'
+import fetchNews from './textes/fetchNews.js'
+import fetchHero from './textes/fetchHero.js'
+import fetchsearch from './textes/fetchsearch.js'
+// import fetchTier from './textes/fetchTier.js'
+
 // // 引用 axios
 // import axios from 'axios'
 // // 引用 Flex 模板
@@ -20,6 +25,15 @@ const bot = linebot({
 bot.on('message', event => {
   if (event.message.text === '熱門英雄') {
     fetchHot(event)
+  }
+  if (event.message.text === '最新消息') {
+    fetchNews(event)
+  }
+  if (event.message.text === '所有英雄') {
+    fetchHero(event)
+  }
+  if (event.message.text.startsWith('查英雄 ')) {
+    fetchsearch(event)
   }
 })
 
