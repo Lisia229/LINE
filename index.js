@@ -6,7 +6,6 @@ import fetchHot from './textes/fetchHot.js'
 import fetchNews from './textes/fetchNews.js'
 import fetchHero from './textes/fetchHero.js'
 import fetchsearch from './textes/fetchsearch.js'
-// import fetchTier from './textes/fetchTier.js'
 
 // // 引用 axios
 // import axios from 'axios'

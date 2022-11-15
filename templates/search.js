@@ -1,12 +1,11 @@
 export default {
   type: 'bubble',
-  size: 'micro',
   hero: {
     type: 'image',
     url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg',
     size: 'full',
     aspectMode: 'cover',
-    aspectRatio: '320:213'
+    aspectRatio: '15:13'
   },
   body: {
     type: 'box',
@@ -16,7 +15,7 @@ export default {
         type: 'text',
         text: 'Brown Cafe',
         weight: 'bold',
-        size: 'sm',
+        size: '20px',
         wrap: true
       }
     ],
@@ -34,9 +33,21 @@ export default {
         height: 'sm',
         action: {
           type: 'uri',
-          label: '角色介紹',
+          label: '英雄介紹',
           uri: 'https://linecorp.com'
-        }
+        },
+        color: '#715b6e'
+      },
+      {
+        type: 'button',
+        style: 'link',
+        height: 'sm',
+        action: {
+          type: 'uri',
+          label: '出裝＆符文攻略',
+          uri: 'https://linecorp.com'
+        },
+        color: '#715b6e'
       },
       {
         type: 'box',

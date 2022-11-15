@@ -55,6 +55,16 @@ export default {
         height: 'sm',
         action: {
           type: 'uri',
+          label: '角色介紹',
+          uri: 'https://linecorp.com'
+        }
+      },
+      {
+        type: 'button',
+        style: 'link',
+        height: 'sm',
+        action: {
+          type: 'uri',
           label: '角色出裝',
           uri: 'https://linecorp.com'
         }

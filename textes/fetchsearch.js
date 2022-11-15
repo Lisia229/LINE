@@ -15,6 +15,7 @@ export default async (event) => {
         bubble.hero.url = $(this).find('.ChampionListCard-module--championImage--8pKNw').attr('src')
         bubble.body.contents[0].text = $(this).find('.ChampionListCard-module--championImage--8pKNw').attr('alt')
         bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).find('.ChampionListCard-module--championListCardWrapper--BJ2LG').attr('href')
+        bubble.footer.contents[1].action.uri = 'https://lolwildriftbuild.com/champion/' + $(this).find('.ChampionListCard-module--championListCardWrapper--BJ2LG').attr('href').split('/')[3] + '/'
       }
     })
     const reply = {

@@ -5,16 +5,16 @@ import writejson from '../utils/writejson.js'
 
 export default async (event) => {
   try {
-    const { data } = await axios.get('https://lolwildriftbuild.com/tier-list/')
-    // const { data: data2 } = await axios.get('https://lolwildriftbuild.com/tier-list/')
-    // const $$ = cheerio.load(data2)
+    const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/champions/')
     const $ = cheerio.load(data)
     const bubble = JSON.parse(JSON.stringify(templates))
-    $('.characters-list').each(function () {
-      const heroname = $(this).find('.character-icon').attr('alt')
-      console.log(heroname)
+    $('.ChampionList-module--championList---KkLH li').each(function () {
+      const heroname = $(this).find('.ChampionListCard-module--championImage--8pKNw').attr('alt')
       if (heroname.includes(event.message.text.substr(4))) {
-        bubble.footer.contents[0].action.uri = $(this).find('.characters-item').attr('href')
+        bubble.hero.url = $(this).find('.ChampionListCard-module--championImage--8pKNw').attr('src')
+        bubble.body.contents[0].text = $(this).find('.ChampionListCard-module--championImage--8pKNw').attr('alt')
+        bubble.footer.contents[0].action[0].uri = 'https://wildrift.leagueoflegends.com' + $(this).find('.ChampionListCard-module--championListCardWrapper--BJ2LG').attr('href')
+        bubble.footer.contents[0].action[1].uri = 'https://lolwildriftbuild.com/champion/' + $(this).find('.ChampionListCard-module--championListCardWrapper--BJ2LG').attr('href').split('/')[3] + '/'
       }
     })
     const reply = {
