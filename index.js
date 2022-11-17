@@ -31,6 +31,9 @@ bot.on('message', event => {
   if (event.message.text === '所有英雄') {
     fetchHero(event)
   }
+  if (event.message.text === '查英雄') {
+    event.reply('若要查詢英雄 請打關鍵字，例如:查英雄 娜米')
+  }
   if (event.message.text.startsWith('查英雄 ')) {
     fetchsearch(event)
   }
