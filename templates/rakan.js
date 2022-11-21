@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltaf42acf6f3dacbfb/60259af75f9b2812764c3f1d/Lux_Skin04.jpg',
+    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blta53f1193c8f696ef/6024310829a02c49ba1f67a9/Rakan_Skin02.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'
@@ -13,21 +13,21 @@ export default {
     contents: [
       {
         type: 'text',
-        text: '拉克絲',
+        text: '銳空',
         weight: 'bold',
         size: '20px',
         wrap: true
       },
       {
         type: 'text',
-        text: '角色定位：法師 / 輔助',
+        text: '角色定位：輔助 / 坦克',
         weight: 'bold',
         size: '16px',
         wrap: true
       },
       {
         type: 'text',
-        text: '操作難易度：低',
+        text: '操作難易度：適中',
         weight: 'bold',
         size: '16px',
         wrap: true
@@ -54,14 +54,14 @@ export default {
               },
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Ionian_Boots_of_Lucidity.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Mercury_sTreads.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 offsetStart: '50px'
               },
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Stasis_Enchant.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Locket_Enchant.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 align: 'end',
@@ -96,7 +96,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Luden_sEcho.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Hextech_Revolver.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -104,14 +104,14 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Ionian_Boots_of_Lucidity.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Mercury_sTreads.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '40px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Awakened_Soul_stealer.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Ardent_Censer.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -121,21 +121,21 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Rabadon_sDeathcap.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Zeke_sConvergence.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '120px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Void_Staff.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/07/crystalline-reflector.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '160px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Orb.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/07/staff-of-flowing-waters.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '200px'
@@ -177,14 +177,14 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/brutal_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/weakness_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '50px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/06/Second_Wind_rune.png',
+                    url: 'hhttps://lolwildriftbuild.com/wp-content/uploads/2020/10/huntertitan_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -194,7 +194,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/manaflowband_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/pathfinder_wild_rift.png',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '150px'
@@ -212,7 +212,8 @@ export default {
       }
     ],
     spacing: 'sm',
-    paddingAll: '13px'
+    paddingAll: '13px',
+    backgroundColor: '#ecf9ec'
   },
   footer: {
     type: 'box',
@@ -226,9 +227,9 @@ export default {
         action: {
           type: 'uri',
           label: '英雄介紹',
-          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/lux/'
+          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/rakan/'
         },
-        color: '#715b6e'
+        color: '#990033'
       },
       {
         type: 'button',
@@ -237,9 +238,9 @@ export default {
         action: {
           type: 'uri',
           label: '出裝＆符文攻略',
-          uri: 'https://lolwildriftbuild.com/champion/lux/'
+          uri: 'https://lolwildriftbuild.com/champion/rakan/'
         },
-        color: '#715b6e'
+        color: '#990033'
       },
       {
         type: 'box',
@@ -247,6 +248,7 @@ export default {
         contents: [],
         margin: 'sm'
       }
-    ]
+    ],
+    backgroundColor: '#ecf9ec'
   }
 }

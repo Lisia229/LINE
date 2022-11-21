@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltaf42acf6f3dacbfb/60259af75f9b2812764c3f1d/Lux_Skin04.jpg',
+    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt52b88b54c3669611/5f7f7b640687250f6aedc2e9/twistedfate_skin03.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'
@@ -13,21 +13,21 @@ export default {
     contents: [
       {
         type: 'text',
-        text: '拉克絲',
+        text: '逆命',
         weight: 'bold',
         size: '20px',
         wrap: true
       },
       {
         type: 'text',
-        text: '角色定位：法師 / 輔助',
+        text: '角色定位：法師 / 射手',
         weight: 'bold',
         size: '16px',
         wrap: true
       },
       {
         type: 'text',
-        text: '操作難易度：低',
+        text: '操作難易度：適中',
         weight: 'bold',
         size: '16px',
         wrap: true
@@ -96,7 +96,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Luden_sEcho.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/RodofAges.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -111,7 +111,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Awakened_Soul_stealer.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Lich_Bane.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -128,17 +128,17 @@ export default {
                   },
                   {
                     type: 'image',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/RapidFire_cannon.jpg',
+                    size: 'xxs',
+                    position: 'absolute',
+                    offsetStart: '200px'
+                  },
+                  {
+                    type: 'image',
                     url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Void_Staff.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '160px'
-                  },
-                  {
-                    type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Orb.jpg',
-                    size: 'xxs',
-                    position: 'absolute',
-                    offsetStart: '200px'
                   }
                 ],
                 spacing: 'sm',
@@ -184,7 +184,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/06/Second_Wind_rune.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/backbone_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -194,7 +194,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/manaflowband_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/sweettooth_wild_rift.png',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '150px'
@@ -212,7 +212,8 @@ export default {
       }
     ],
     spacing: 'sm',
-    paddingAll: '13px'
+    paddingAll: '13px',
+    backgroundColor: '#e6f7ff'
   },
   footer: {
     type: 'box',
@@ -226,9 +227,9 @@ export default {
         action: {
           type: 'uri',
           label: '英雄介紹',
-          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/lux/'
+          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/twisted-fate/'
         },
-        color: '#715b6e'
+        color: '#004466'
       },
       {
         type: 'button',
@@ -237,9 +238,9 @@ export default {
         action: {
           type: 'uri',
           label: '出裝＆符文攻略',
-          uri: 'https://lolwildriftbuild.com/champion/lux/'
+          uri: 'https://lolwildriftbuild.com/champion/twisted-fate/'
         },
-        color: '#715b6e'
+        color: '#004466'
       },
       {
         type: 'box',
@@ -247,6 +248,7 @@ export default {
         contents: [],
         margin: 'sm'
       }
-    ]
+    ],
+    backgroundColor: '#e6f7ff'
   }
 }

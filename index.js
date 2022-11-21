@@ -26,6 +26,76 @@ import evelynn from './textes/evelynn.js'
 import wukong from './textes/wukong.js'
 import ekko from './textes/ekko.js'
 import ezreal from './textes/ezreal.js'
+import fiora from './textes/fiora.js'
+import fizz from './textes/fizz.js'
+import garen from './textes/garen.js'
+import gragas from './textes/gragas.js'
+import graves from './textes/graves.js'
+import janna from './textes/janna.js'
+import jarvan from './textes/jarvan.js'
+import jax from './textes/jax.js'
+import morgana from './textes/morgana.js'
+import corki from './textes/corki.js'
+import kennen from './textes/kennen.js'
+import jhin from './textes/jhin.js'
+import jinx from './textes/jinx.js'
+import kaisa from './textes/kaisa.js'
+import lee from './textes/lee.js'
+import lulu from './textes/lulu.js'
+import malphite from './textes/malphite.js'
+import yi from './textes/yi.js'
+import fortune from './textes/fortune.js'
+import nami from './textes/nami.js'
+import nasus from './textes/nasus.js'
+import olaf from './textes/olaf.js'
+import orianna from './textes/orianna.js'
+import rakan from './textes/rakan.js'
+import seraphine from './textes/seraphine.js'
+import shyvana from './textes/shyvana.js'
+import singed from './textes/singed.js'
+import nunu from './textes/nunu.js'
+import sona from './textes/sona.js'
+import soraka from './textes/soraka.js'
+import tristana from './textes/tristana.js'
+import teemo from './textes/teemo.js'
+import tryndamere from './textes/tryndamere.js'
+import twisted from './textes/twisted.js'
+import varus from './textes/varus.js'
+import vayne from './textes/vayne.js'
+import vi from './textes/vi.js'
+import lucian from './textes/lucian.js'
+import xayah from './textes/xayah.js'
+import zhao from './textes/zhao.js'
+import yasuo from './textes/yasuo.js'
+import sett from './textes/sett.js'
+import zed from './textes/zed.js'
+import ziggs from './textes/ziggs.js'
+// import senna from './textes/senna.js'
+// import katarina from './textes/katarina.js'
+// import kha from './textes/kha.js'
+// import rengar from './textes/rengar.js'
+// import rammus from './textes/rammus.js'
+// import galio from './textes/galio.js'
+// import pantheon from './textes/pantheon.js'
+// import veigar from './textes/veigar.js'
+// import leona from './textes/leona.js'
+// import diana from './textes/diana.js'
+// import riven from './textes/riven.js'
+// import akshan from './textes/akshan.js'
+// import irelia from './textes/irelia.js'
+// import renekton from './textes/renekton.js'
+// import thresh from './textes/thresh.js'
+// import yuumi from './textes/yuumi.js'
+// import caitlyn from './textes/caitlyn.js'
+// import jayce from './textes/jayce.js'
+// import karma from './textes/karma.js'
+// import shen from './textes/shen.js'
+// import nautilus from './textes/nautilus.js'
+// import pyke from './textes/pyke.js'
+// import kassadin from './textes/kassadin.js'
+// import samira from './textes/samira.js'
+// import sion from './textes/sion.js'
+// import yone from './textes/yone.js'
 
 // // 引用 axios
 // import axios from 'axios'
@@ -121,6 +191,138 @@ bot.on('message', event => {
       }
       if (event.message.text.startsWith('查符文 伊澤瑞爾')) {
         ezreal(event)
+      }
+      if (event.message.text.startsWith('查符文 菲歐拉')) {
+        fiora(event)
+      }
+      if (event.message.text.startsWith('查符文 飛斯')) {
+        fizz(event)
+      }
+      if (event.message.text.startsWith('查符文 蓋倫')) {
+        garen(event)
+      }
+      if (event.message.text.startsWith('查符文 古拉格斯')) {
+        gragas(event)
+      }
+      if (event.message.text.startsWith('查符文 葛雷夫')) {
+        graves(event)
+      }
+      if (event.message.text.startsWith('查符文 珍娜')) {
+        janna(event)
+      }
+      if (event.message.text.startsWith('查符文 嘉文四世')) {
+        jarvan(event)
+      }
+      if (event.message.text.startsWith('查符文 賈克斯')) {
+        jax(event)
+      }
+      if (event.message.text.startsWith('查符文 魔甘娜')) {
+        morgana(event)
+      }
+      if (event.message.text.startsWith('查符文 庫奇')) {
+        corki(event)
+      }
+      if (event.message.text.startsWith('查符文 凱能')) {
+        kennen(event)
+      }
+      if (event.message.text.startsWith('查符文 燼')) {
+        jhin(event)
+      }
+      if (event.message.text.startsWith('查符文 吉茵珂絲')) {
+        jinx(event)
+      }
+      if (event.message.text.startsWith('查符文 凱莎')) {
+        kaisa(event)
+      }
+      if (event.message.text.startsWith('查符文 李星')) {
+        lee(event)
+      }
+      if (event.message.text.startsWith('查符文 露璐')) {
+        lulu(event)
+      }
+      if (event.message.text.startsWith('查符文 墨菲特')) {
+        malphite(event)
+      }
+      if (event.message.text.startsWith('查符文 易大師')) {
+        yi(event)
+      }
+      if (event.message.text.startsWith('查符文 好運姐')) {
+        fortune(event)
+      }
+      if (event.message.text.startsWith('查符文 娜米')) {
+        nami(event)
+      }
+      if (event.message.text.startsWith('查符文 納瑟斯')) {
+        nasus(event)
+      }
+      if (event.message.text.startsWith('查符文 歐拉夫')) {
+        olaf(event)
+      }
+      if (event.message.text.startsWith('查符文 奧莉安娜')) {
+        orianna(event)
+      }
+      if (event.message.text.startsWith('查符文 銳空')) {
+        rakan(event)
+      }
+      if (event.message.text.startsWith('查符文 銳空')) {
+        seraphine(event)
+      }
+      if (event.message.text.startsWith('查符文 希瓦娜')) {
+        shyvana(event)
+      }
+      if (event.message.text.startsWith('查符文 辛吉德')) {
+        singed(event)
+      }
+      if (event.message.text.startsWith('查符文 努努和威朗普')) {
+        nunu(event)
+      }
+      if (event.message.text.startsWith('查符文 索娜')) {
+        sona(event)
+      }
+      if (event.message.text.startsWith('查符文 索拉卡')) {
+        soraka(event)
+      }
+      if (event.message.text.startsWith('查符文 崔絲塔娜')) {
+        tristana(event)
+      }
+      if (event.message.text.startsWith('查符文 提摩')) {
+        teemo(event)
+      }
+      if (event.message.text.startsWith('查符文 泰達米爾')) {
+        tryndamere(event)
+      }
+      if (event.message.text.startsWith('查符文 逆命')) {
+        twisted(event)
+      }
+      if (event.message.text.startsWith('查符文 法洛士')) {
+        varus(event)
+      }
+      if (event.message.text.startsWith('查符文 汎')) {
+        vayne(event)
+      }
+      if (event.message.text.startsWith('查符文 菲艾')) {
+        vi(event)
+      }
+      if (event.message.text.startsWith('查符文 路西恩')) {
+        lucian(event)
+      }
+      if (event.message.text.startsWith('查符文 剎雅')) {
+        xayah(event)
+      }
+      if (event.message.text.startsWith('查符文 趙信')) {
+        zhao(event)
+      }
+      if (event.message.text.startsWith('查符文 犽宿')) {
+        yasuo(event)
+      }
+      if (event.message.text.startsWith('查符文 賽特')) {
+        sett(event)
+      }
+      if (event.message.text.startsWith('查符文 劫')) {
+        zed(event)
+      }
+      if (event.message.text.startsWith('查符文 希格斯')) {
+        ziggs(event)
       } else {
         event.reply('搜哩哪 我不太懂你的意思qaq')
       }

@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltaf42acf6f3dacbfb/60259af75f9b2812764c3f1d/Lux_Skin04.jpg',
+    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt8b11aa43631cb4e4/6024ec3b0f1c0c1aa6f8a72d/Xayah_Skin03_Splash.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'
@@ -13,21 +13,21 @@ export default {
     contents: [
       {
         type: 'text',
-        text: '拉克絲',
+        text: '剎雅',
         weight: 'bold',
         size: '20px',
         wrap: true
       },
       {
         type: 'text',
-        text: '角色定位：法師 / 輔助',
+        text: '角色定位：射手 / MAGE',
         weight: 'bold',
         size: '16px',
         wrap: true
       },
       {
         type: 'text',
-        text: '操作難易度：低',
+        text: '操作難易度：適中',
         weight: 'bold',
         size: '16px',
         wrap: true
@@ -46,7 +46,7 @@ export default {
             contents: [
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/amplifying-tome.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Long_Sword.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 align: 'start',
@@ -61,7 +61,7 @@ export default {
               },
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Stasis_Enchant.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Quicksilver_Enchant.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 align: 'end',
@@ -96,7 +96,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Luden_sEcho.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Edge.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -111,7 +111,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Awakened_Soul_stealer.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Statikk_Shiv.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -121,21 +121,21 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Rabadon_sDeathcap.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/RapidFire_cannon.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '120px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Void_Staff.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Mortal_Reminder.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '160px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Orb.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Guardian_Angel.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '200px'
@@ -169,7 +169,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/electrocute_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/conqueror_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -177,7 +177,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/brutal_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/gatheringstorm_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '50px'
@@ -194,7 +194,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/manaflowband_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/sweettooth_wild_rift.png',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '150px'
@@ -212,7 +212,8 @@ export default {
       }
     ],
     spacing: 'sm',
-    paddingAll: '13px'
+    paddingAll: '13px',
+    backgroundColor: '#fff9e6'
   },
   footer: {
     type: 'box',
@@ -226,9 +227,9 @@ export default {
         action: {
           type: 'uri',
           label: '英雄介紹',
-          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/lux/'
+          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/xayah/'
         },
-        color: '#715b6e'
+        color: '#b38900'
       },
       {
         type: 'button',
@@ -237,9 +238,9 @@ export default {
         action: {
           type: 'uri',
           label: '出裝＆符文攻略',
-          uri: 'https://lolwildriftbuild.com/champion/lux/'
+          uri: 'https://lolwildriftbuild.com/champion/xayah/'
         },
-        color: '#715b6e'
+        color: '#b38900'
       },
       {
         type: 'box',
@@ -247,6 +248,7 @@ export default {
         contents: [],
         margin: 'sm'
       }
-    ]
+    ],
+    backgroundColor: '#fff9e6'
   }
 }

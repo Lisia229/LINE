@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltaf42acf6f3dacbfb/60259af75f9b2812764c3f1d/Lux_Skin04.jpg',
+    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltce293c7876335d44/5f7f71abfbf5650f0cf1474d/gragas_skin02.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'
@@ -13,21 +13,21 @@ export default {
     contents: [
       {
         type: 'text',
-        text: '拉克絲',
+        text: '古拉格斯',
         weight: 'bold',
         size: '20px',
         wrap: true
       },
       {
         type: 'text',
-        text: '角色定位：法師 / 輔助',
+        text: '角色定位：坦克 / 法師',
         weight: 'bold',
         size: '16px',
         wrap: true
       },
       {
         type: 'text',
-        text: '操作難易度：低',
+        text: '操作難易度：適中',
         weight: 'bold',
         size: '16px',
         wrap: true
@@ -61,7 +61,7 @@ export default {
               },
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Stasis_Enchant.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Protobelt_Enchant.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 align: 'end',
@@ -96,7 +96,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Luden_sEcho.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Lich_Bane.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -111,7 +111,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Awakened_Soul_stealer.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Orb.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -135,7 +135,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Orb.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/07/crystalline-reflector.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '200px'
@@ -184,7 +184,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/06/Second_Wind_rune.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/huntertitan_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -194,7 +194,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/manaflowband_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/pathfinder_wild_rift.png',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '150px'
@@ -212,7 +212,8 @@ export default {
       }
     ],
     spacing: 'sm',
-    paddingAll: '13px'
+    paddingAll: '13px',
+    backgroundColor: '#ffe6e6'
   },
   footer: {
     type: 'box',
@@ -226,9 +227,9 @@ export default {
         action: {
           type: 'uri',
           label: '英雄介紹',
-          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/lux/'
+          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/gragas/'
         },
-        color: '#715b6e'
+        color: '#800000'
       },
       {
         type: 'button',
@@ -237,9 +238,9 @@ export default {
         action: {
           type: 'uri',
           label: '出裝＆符文攻略',
-          uri: 'https://lolwildriftbuild.com/champion/lux/'
+          uri: 'https://lolwildriftbuild.com/champion/gragas/'
         },
-        color: '#715b6e'
+        color: '#800000'
       },
       {
         type: 'box',
@@ -247,6 +248,7 @@ export default {
         contents: [],
         margin: 'sm'
       }
-    ]
+    ],
+    backgroundColor: '#ffe6e6'
   }
 }

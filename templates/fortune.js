@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltaf42acf6f3dacbfb/60259af75f9b2812764c3f1d/Lux_Skin04.jpg',
+    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt130e9a9de351a661/6025b8d71c9f7c183961a251/MissFortune_Skin05.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'
@@ -13,14 +13,14 @@ export default {
     contents: [
       {
         type: 'text',
-        text: '拉克絲',
+        text: '好運姐',
         weight: 'bold',
         size: '20px',
         wrap: true
       },
       {
         type: 'text',
-        text: '角色定位：法師 / 輔助',
+        text: '角色定位：射手 / 法師',
         weight: 'bold',
         size: '16px',
         wrap: true
@@ -46,7 +46,7 @@ export default {
             contents: [
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/amplifying-tome.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Long_Sword.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 align: 'start',
@@ -54,7 +54,7 @@ export default {
               },
               {
                 type: 'image',
-                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Ionian_Boots_of_Lucidity.jpg',
+                url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Boots_of_Swiftness.jpg',
                 size: 'xxs',
                 position: 'absolute',
                 offsetStart: '50px'
@@ -96,7 +96,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Luden_sEcho.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Youmuu_sGhostblade.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -104,14 +104,14 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Ionian_Boots_of_Lucidity.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Boots_of_Swiftness.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '40px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Awakened_Soul_stealer.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Edge.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -121,21 +121,21 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Rabadon_sDeathcap.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Mortal_Reminder.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '120px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Void_Staff.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/RapidFire_cannon.jpg',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '160px'
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Infinity_Orb.jpg',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/Guardian_Angel.jpg',
                     size: 'xxs',
                     position: 'absolute',
                     offsetStart: '200px'
@@ -169,7 +169,7 @@ export default {
                 contents: [
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/electrocute_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/fleetfootwork_wild_rift.png',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'start',
@@ -184,7 +184,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2021/06/Second_Wind_rune.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/10/loyalty_wild_royalty.png',
                     size: 'xxs',
                     position: 'absolute',
                     align: 'end',
@@ -194,7 +194,7 @@ export default {
                   },
                   {
                     type: 'image',
-                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/manaflowband_wild_rift.png',
+                    url: 'https://lolwildriftbuild.com/wp-content/uploads/2020/11/sweettooth_wild_rift.png',
                     position: 'absolute',
                     size: 'xxs',
                     offsetStart: '150px'
@@ -212,7 +212,8 @@ export default {
       }
     ],
     spacing: 'sm',
-    paddingAll: '13px'
+    paddingAll: '13px',
+    backgroundColor: '#e6ccff'
   },
   footer: {
     type: 'box',
@@ -226,9 +227,9 @@ export default {
         action: {
           type: 'uri',
           label: '英雄介紹',
-          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/lux/'
+          uri: 'https://wildrift.leagueoflegends.com/zh-tw/champions/miss-fortune/'
         },
-        color: '#715b6e'
+        color: '#7700e6'
       },
       {
         type: 'button',
@@ -237,9 +238,9 @@ export default {
         action: {
           type: 'uri',
           label: '出裝＆符文攻略',
-          uri: 'https://lolwildriftbuild.com/champion/lux/'
+          uri: 'https://lolwildriftbuild.com/champion/miss-fortune/'
         },
-        color: '#715b6e'
+        color: '#7700e6'
       },
       {
         type: 'box',
@@ -247,6 +248,7 @@ export default {
         contents: [],
         margin: 'sm'
       }
-    ]
+    ],
+    backgroundColor: '#e6ccff'
   }
 }
