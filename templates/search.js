@@ -20,7 +20,8 @@ export default {
       }
     ],
     spacing: 'sm',
-    paddingAll: '13px'
+    paddingAll: '13px',
+    backgroundColor: '#f4f0e6'
   },
   footer: {
     type: 'box',
@@ -55,6 +56,7 @@ export default {
         contents: [],
         margin: 'sm'
       }
-    ]
+    ],
+    backgroundColor: '#f4f0e6'
   }
 }
