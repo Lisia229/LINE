@@ -5,6 +5,7 @@ import fetchHot from './textes/fetchHot.js'
 import fetchNews from './textes/fetchNews.js'
 import fetchHero from './textes/fetchHero.js'
 import fetchsearch from './textes/fetchsearch.js'
+
 import lux from './textes/AP_lux.js'
 import Suplux from './textes/sup_lux.js'
 import ahri from './textes/ahri.js'
@@ -323,8 +324,6 @@ bot.on('message', event => {
       }
       if (event.message.text.startsWith('查符文 希格斯')) {
         ziggs(event)
-      } else {
-        event.reply('搜哩哪 我不太懂你的意思qaq')
       }
     } catch (error) {
       console.log(error)
