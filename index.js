@@ -6,6 +6,13 @@ import fetchNews from './textes/fetchNews.js'
 import fetchHero from './textes/fetchHero.js'
 import fetchsearch from './textes/fetchsearch.js'
 
+import quickReplySup from './quickbutton/quickbuttonsup.js'
+import quickReplyAd from './quickbutton/quickbuttonAd.js'
+import quickReplyAp from './quickbutton/quickbuttonAp.js'
+import quickReplyJg from './quickbutton/quickbuttonJg.js'
+import quickReplyTop from './quickbutton/quickbuttontop2.js'
+import quickReplyRoad from './quickbutton/quickbuttonRoad.js'
+
 import lux from './textes/AP_lux.js'
 import Suplux from './textes/sup_lux.js'
 import ahri from './textes/ahri.js'
@@ -71,32 +78,32 @@ import yasuo from './textes/yasuo.js'
 import sett from './textes/sett.js'
 import zed from './textes/zed.js'
 import ziggs from './textes/ziggs.js'
-// import senna from './textes/senna.js'
-// import katarina from './textes/katarina.js'
-// import kha from './textes/kha.js'
-// import rengar from './textes/rengar.js'
-// import rammus from './textes/rammus.js'
-// import galio from './textes/galio.js'
-// import pantheon from './textes/pantheon.js'
-// import veigar from './textes/veigar.js'
-// import leona from './textes/leona.js'
-// import diana from './textes/diana.js'
-// import riven from './textes/riven.js'
-// import akshan from './textes/akshan.js'
-// import irelia from './textes/irelia.js'
-// import renekton from './textes/renekton.js'
-// import thresh from './textes/thresh.js'
-// import yuumi from './textes/yuumi.js'
-// import caitlyn from './textes/caitlyn.js'
-// import jayce from './textes/jayce.js'
-// import karma from './textes/karma.js'
-// import shen from './textes/shen.js'
-// import nautilus from './textes/nautilus.js'
-// import pyke from './textes/pyke.js'
-// import kassadin from './textes/kassadin.js'
-// import samira from './textes/samira.js'
-// import sion from './textes/sion.js'
-// import yone from './textes/yone.js'
+import senna from './textes/senna.js'
+import katarina from './textes/katarina.js'
+import kha from './textes/kha.js'
+import rengar from './textes/rengar.js'
+import rammus from './textes/rammus.js'
+import galio from './textes/galio.js'
+import pantheon from './textes/pantheon.js'
+import veigar from './textes/veigar.js'
+import leona from './textes/leona.js'
+import diana from './textes/diana.js'
+import riven from './textes/riven.js'
+import akshan from './textes/akshan.js'
+import irelia from './textes/irelia.js'
+import renekton from './textes/renekton.js'
+import thresh from './textes/thresh.js'
+import yuumi from './textes/yuumi.js'
+import caitlyn from './textes/caitlyn.js'
+import jayce from './textes/jayce.js'
+import karma from './textes/karma.js'
+import shen from './textes/shen.js'
+import nautilus from './textes/nautilus.js'
+import pyke from './textes/pyke.js'
+import kassadin from './textes/kassadin.js'
+import samira from './textes/samira.js'
+import sion from './textes/sion.js'
+import yone from './textes/yone.js'
 
 // // 引用 axios
 // import axios from 'axios'
@@ -124,8 +131,26 @@ bot.on('message', event => {
       if (event.message.text === '所有英雄') {
         fetchHero(event)
       }
+      if (event.message.text === '路線') {
+        quickReplyRoad(event)
+      }
+      if (event.message.text === 'Sup') {
+        quickReplySup(event)
+      }
+      if (event.message.text === 'Ad') {
+        quickReplyAd(event)
+      }
+      if (event.message.text === 'Ap') {
+        quickReplyAp(event)
+      }
+      if (event.message.text === 'Jg') {
+        quickReplyJg(event)
+      }
+      if (event.message.text === 'Top') {
+        quickReplyTop(event)
+      }
       if (event.message.text === '查英雄') {
-        event.reply('若想快速查詢英雄，請打關鍵字，例如:查英雄 娜米; 若想查詢符文，請打關鍵字，例如:查符文 拉克絲')
+        event.reply('若想快速查詢英雄，請打關鍵字，例如:查英雄 娜米;' + '<br>' + '若想查詢符文，請打關鍵字，例如:查符文 拉克絲' + '<br>' + '也可使用關鍵字查詢 SUP / TOP / JG / AD / AP')
       }
       if (event.message.text.startsWith('查英雄 ')) {
         fetchsearch(event)
@@ -138,6 +163,9 @@ bot.on('message', event => {
       }
       if (event.message.text.startsWith('查符文 阿璃')) {
         ahri(event)
+      }
+      if (event.message.text.startsWith('查符文 賽恩')) {
+        sion(event)
       }
       if (event.message.text.startsWith('查符文 阿卡莉')) {
         akali(event)
@@ -153,6 +181,9 @@ bot.on('message', event => {
       }
       if (event.message.text.startsWith('查符文 艾希')) {
         ashe(event)
+      }
+      if (event.message.text.startsWith('查符文 悠咪')) {
+        yuumi(event)
       }
       if (event.message.text.startsWith('查符文 翱銳龍獸')) {
         aurelion(event)
@@ -324,6 +355,78 @@ bot.on('message', event => {
       }
       if (event.message.text.startsWith('查符文 希格斯')) {
         ziggs(event)
+      }
+      if (event.message.text.startsWith('查符文 姍娜')) {
+        senna(event)
+      }
+      if (event.message.text.startsWith('查符文 卡特蓮娜')) {
+        katarina(event)
+      }
+      if (event.message.text.startsWith('查符文 卡力斯')) {
+        kha(event)
+      }
+      if (event.message.text.startsWith('查符文 雷葛爾')) {
+        rengar(event)
+      }
+      if (event.message.text.startsWith('查符文 拉姆斯')) {
+        rammus(event)
+      }
+      if (event.message.text.startsWith('查符文 加里歐')) {
+        galio(event)
+      }
+      if (event.message.text.startsWith('查符文 潘森')) {
+        pantheon(event)
+      }
+      if (event.message.text.startsWith('查符文 維迦')) {
+        veigar(event)
+      }
+      if (event.message.text.startsWith('查符文 雷歐娜')) {
+        leona(event)
+      }
+      if (event.message.text.startsWith('查符文 黛安娜')) {
+        diana(event)
+      }
+      if (event.message.text.startsWith('查符文 雷玟')) {
+        riven(event)
+      }
+      if (event.message.text.startsWith('查符文 埃可尚')) {
+        akshan(event)
+      }
+      if (event.message.text.startsWith('查符文 伊瑞莉雅')) {
+        irelia(event)
+      }
+      if (event.message.text.startsWith('查符文 雷尼克頓')) {
+        renekton(event)
+      }
+      if (event.message.text.startsWith('查符文 瑟雷西')) {
+        thresh(event)
+      }
+      if (event.message.text.startsWith('查符文 凱特琳')) {
+        caitlyn(event)
+      }
+      if (event.message.text.startsWith('查符文 杰西')) {
+        jayce(event)
+      }
+      if (event.message.text.startsWith('查符文 卡瑪')) {
+        karma(event)
+      }
+      if (event.message.text.startsWith('查符文 慎')) {
+        shen(event)
+      }
+      if (event.message.text.startsWith('查符文 納帝魯斯')) {
+        nautilus(event)
+      }
+      if (event.message.text.startsWith('查符文 派克')) {
+        pyke(event)
+      }
+      if (event.message.text.startsWith('查符文 卡薩丁')) {
+        kassadin(event)
+      }
+      if (event.message.text.startsWith('查符文 煞蜜拉')) {
+        samira(event)
+      }
+      if (event.message.text.startsWith('查符文 犽凝')) {
+        yone(event)
       }
     } catch (error) {
       console.log(error)
