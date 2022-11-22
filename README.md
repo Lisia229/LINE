@@ -28,3 +28,6 @@
 ### 可以查詢英雄的詳細資訊
 ![S__75153459](https://user-images.githubusercontent.com/113668469/203234021-0c413ea4-873b-44df-8fe4-c2e51565c86f.jpg)
 
+### 參考資料
+https://lolwildriftbuild.com/champions-list/
+https://wildrift.leagueoflegends.com/zh-tw/champions/lux/
