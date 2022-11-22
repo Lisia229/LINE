@@ -150,7 +150,7 @@ bot.on('message', event => {
         quickReplyTop(event)
       }
       if (event.message.text === '查英雄') {
-        event.reply('若想快速查詢英雄，請打關鍵字，例如:查英雄 娜米;' + '<br>' + '若想查詢符文，請打關鍵字，例如:查符文 拉克絲' + '<br>' + '也可使用關鍵字查詢 SUP / TOP / JG / AD / AP')
+        event.reply('若想快速查詢英雄，請打關鍵字，例如:查英雄 娜米;若想查詢符文，請打關鍵字，例如:查符文 拉克絲; 也可使用關鍵字查詢 Sup / Top / Jg / Ad / Ap')
       }
       if (event.message.text.startsWith('查英雄 ')) {
         fetchsearch(event)
@@ -296,7 +296,7 @@ bot.on('message', event => {
       if (event.message.text.startsWith('查符文 銳空')) {
         rakan(event)
       }
-      if (event.message.text.startsWith('查符文 銳空')) {
+      if (event.message.text.startsWith('查符文 瑟菈紛')) {
         seraphine(event)
       }
       if (event.message.text.startsWith('查符文 希瓦娜')) {
