@@ -5,14 +5,14 @@ import writejson from '../utils/writejson.js'
 
 export default async (event) => {
   try {
-    const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/?utm_source=riotbar&utm_medium=productcard%2Baccountmigration.leagueoflegends.com&utm_campaign=wr&utm_content=wr_keyart01')
+    const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/')
     const $ = cheerio.load(data)
     const news = []
-    $('.News-module--sliderWrapper--YjoDb ul li').each(function () {
+    $('.content-wrapper').each(function () {
       const bubble = JSON.parse(JSON.stringify(templates))
-      bubble.hero.url = $(this).find('.NewsCard-module--newsCard--2Puxl').attr('style').split('"')[1]
-      bubble.body.contents[0].text = $(this).find('.NewsCard-module--title--Iycg9').text()
-      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + $(this).find('.heading-03').eq(0).text()
+      bubble.hero.url = $(this).find('.ArticleCard-module--articleCardWrapper--0Y3jo').find('.ArticleCard-module--imageWrapper--v6-pt').find('img').attr('src')
+      bubble.body.contents[0].text = $(this).find('.ArticleCard-module--articleCardWrapper--0Y3jo').find('.ArticleCard-module--imageWrapper--v6-pt').find('img').attr('alt')
+      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + $(this).find('.copy-01').eq(0).text()
       if (bubble.footer.contents[0].action.uri !== 'http') {
         bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).find('.NewsCard-module--cardWrapper--jTMMa').find('.undefined').attr('href')
       } else {
