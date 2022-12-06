@@ -14,9 +14,9 @@ export default async (event) => {
       bubble.body.contents[0].text = $(this).find('.ArticleCard-module--articleCardWrapper--0Y3jo').find('.ArticleCard-module--imageWrapper--v6-pt').find('img').attr('alt')
       bubble.body.contents[1].contents[0].contents[0].text = '日期：' + $(this).find('.copy-01').eq(0).text()
       if (bubble.footer.contents[0].action.uri !== 'http') {
-        bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).find('.NewsCard-module--cardWrapper--jTMMa').find('.undefined').attr('href')
+        bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).find('.ArticleCard-module--articleCardWrapper--0Y3jo ').attr('href')
       } else {
-        bubble.footer.contents[0].action.uri = $(this).find('.NewsCard-module--cardWrapper--jTMMa').find('.undefined').attr('href')
+        bubble.footer.contents[0].action.uri = $(this).find('.ArticleCard-module--articleCardWrapper--0Y3jo ').attr('href')
       }
       news.push(bubble)
     })
