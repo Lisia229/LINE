@@ -8,7 +8,8 @@ export default async (event) => {
     const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/')
     const $ = cheerio.load(data)
     const news = []
-    $('.ArticleCard-module--articleCardWrapper--0Y3jo').each(function () {
+    $('.ArticleCard-module--articleCardWrapper--0Y3jo').each(function (i) {
+      if (i >= 12) return false
       const bubble = JSON.parse(JSON.stringify(templates))
       bubble.hero.url = $(this).find('img').attr('src')
       bubble.body.contents[0].text = $(this).find('img').attr('alt')
