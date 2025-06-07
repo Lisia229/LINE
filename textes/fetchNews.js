@@ -3,20 +3,31 @@ import * as cheerio from 'cheerio'
 import templates from '../templates/News.js'
 import writejson from '../utils/writejson.js'
 
-export default async (event) => {
+export default async event => {
   try {
     const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/')
     const $ = cheerio.load(data)
     const news = []
-    $('.ArticleCard-module--articleCardWrapper--0Y3jo').each(function (i) {
+
+    $('.news-card').each(function (i) {
       if (i >= 12) return false
+
       const bubble = JSON.parse(JSON.stringify(templates))
-      bubble.hero.url = $(this).find('img').attr('src')
-      bubble.body.contents[0].text = $(this).find('img').attr('alt')
-      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + $(this).find('.copy-01').eq(0).text()
-      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).attr('href')
+
+      const imgSrc = $(this).find('img').attr('src') || ''
+      const imgAlt = $(this).find('img').attr('alt') || ''
+      const dateText = $(this).find('.date').text().trim() || ''
+      const href = $(this).attr('href') || ''
+
+      bubble.hero.url = imgSrc
+      bubble.body.contents[0].text = imgAlt
+      // 這裡對應你的模板，改成正確的路徑設定日期文字
+      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + dateText
+      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + href
+
       news.push(bubble)
     })
+
     const reply = {
       type: 'flex',
       altText: '最新消息',
@@ -25,7 +36,8 @@ export default async (event) => {
         contents: news
       }
     }
-    event.reply(reply)
+
+    await event.reply(reply)
     writejson(reply, 'news')
   } catch (error) {
     console.error(error)
