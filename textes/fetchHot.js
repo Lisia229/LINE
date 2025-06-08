@@ -11,7 +11,7 @@ export default async event => {
     const character = []
 
     $('.data_table tr').each(function (i) {
-      if (i >= 12) return false
+      if (i >= 6) return false
       if (i !== 0) {
         const bubble = JSON.parse(JSON.stringify(templates))
         const className = $(this).find('img').attr('class') || ''

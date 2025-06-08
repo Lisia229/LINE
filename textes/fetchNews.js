@@ -10,7 +10,7 @@ export default async event => {
     const news = []
 
     $('.sc-362cdf8e-0.hSAVYW a.action').each(function (i) {
-      if (i >= 12) return false
+      if (i >= 6) return false
 
       const $card = $(this)
       const image = $card.find('img').attr('src')
