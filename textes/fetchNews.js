@@ -1,22 +1,26 @@
 import axios from 'axios'
-import * as cheerio from 'cheerio'
 import templates from '../templates/News.js'
 import writejson from '../utils/writejson.js'
 
 export default async event => {
   try {
-    const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/')
-    const $ = cheerio.load(data)
+    const { data } = await axios.get('https://wildrift.leagueoflegends.com/page-data/zh-tw/news/page-data.json')
+
+    const newsItems = data.result.data.allContentstackNewsArticle.nodes
     const news = []
-    $('.sc-362cdf8e-0').each(function (i) {
-      if (i >= 12) return false
+
+    for (let i = 0; i < Math.min(newsItems.length, 12); i++) {
+      const item = newsItems[i]
       const bubble = JSON.parse(JSON.stringify(templates))
-      bubble.hero.url = $(this).find('img').attr('src')
-      bubble.body.contents[0].text = $(this).find('img').attr('alt')
-      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + $(this).find('.copy-01').eq(0).text()
-      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).attr('href')
+
+      bubble.hero.url = item.heroImage.url
+      bubble.body.contents[0].text = item.title
+      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + item.publishDate
+      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + item.url.alias
+
       news.push(bubble)
-    })
+    }
+
     const reply = {
       type: 'flex',
       altText: '最新消息',
@@ -25,7 +29,8 @@ export default async event => {
         contents: news
       }
     }
-    event.reply(reply)
+
+    await event.reply(reply)
     writejson(reply, 'news')
   } catch (error) {
     console.error(error)
