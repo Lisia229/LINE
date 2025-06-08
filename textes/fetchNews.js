@@ -38,7 +38,6 @@ export default async event => {
       news.push(bubble)
     })
 
-    // 組合 LINE Flex Message 回傳格式
     const reply = {
       type: 'flex',
       altText: '最新消息',
@@ -48,9 +47,7 @@ export default async event => {
       }
     }
 
-    // 回覆使用者
     await event.reply(reply)
-    // 寫檔備份
     writejson(reply, 'news')
   } catch (error) {
     console.error(error)
