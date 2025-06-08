@@ -16,9 +16,13 @@ export default async event => {
 
       const $card = $(this)
 
-      // 抓圖，若無效則用預設圖
-      const imageSrc = $card.find('img').attr('src')
-      const image = imageSrc && imageSrc.startsWith('http') ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
+      let imageSrc = $card.find('img').attr('src') || $card.find('img').attr('data-src') || ''
+      imageSrc = imageSrc.replace(/&amp;/g, '&')
+
+      const image =
+        imageSrc && (imageSrc.startsWith('http://') || imageSrc.startsWith('https://')) ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
+
+      console.log('imageSrc:', imageSrc, '=> image:', image)
 
       // 取得卡片資訊
       const title = $card.find('[data-testid="card-title"]').text().trim()
