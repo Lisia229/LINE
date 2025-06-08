@@ -14,7 +14,7 @@ export default {
     contents: [
       {
         type: 'text',
-        text: 'Brown Cafe',
+        text: '標題',
         weight: 'bold',
         size: 'sm',
         wrap: true
@@ -30,7 +30,7 @@ export default {
             contents: [
               {
                 type: 'text',
-                text: '東京旅行',
+                text: '日期：YYYY-MM-DD',
                 wrap: true,
                 color: '#8c8c8c',
                 size: 'xs',
@@ -55,8 +55,8 @@ export default {
         height: 'sm',
         action: {
           type: 'uri',
-          label: 'WEBSITE',
-          uri: 'https://linecorp.com'
+          label: '閱讀詳情',
+          uri: 'https://wildrift.leagueoflegends.com'
         }
       },
       {
