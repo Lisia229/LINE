@@ -1,6 +1,5 @@
 export default {
   type: 'bubble',
-  size: 'micro',
   hero: {
     type: 'image',
     url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip10.jpg',
@@ -11,6 +10,8 @@ export default {
   body: {
     type: 'box',
     layout: 'vertical',
+    spacing: 'sm',
+    paddingAll: '13px',
     contents: [
       {
         type: 'text',
@@ -20,29 +21,13 @@ export default {
         wrap: true
       },
       {
-        type: 'box',
-        layout: 'vertical',
-        contents: [
-          {
-            type: 'box',
-            layout: 'baseline',
-            spacing: 'sm',
-            contents: [
-              {
-                type: 'text',
-                text: '日期：YYYY-MM-DD',
-                wrap: true,
-                color: '#8c8c8c',
-                size: 'xs',
-                flex: 5
-              }
-            ]
-          }
-        ]
+        type: 'text',
+        text: '日期：YYYY-MM-DD',
+        size: 'xs',
+        color: '#8c8c8c',
+        wrap: true
       }
-    ],
-    spacing: 'sm',
-    paddingAll: '13px'
+    ]
   },
   footer: {
     type: 'box',
@@ -58,13 +43,8 @@ export default {
           label: '閱讀詳情',
           uri: 'https://wildrift.leagueoflegends.com'
         }
-      },
-      {
-        type: 'box',
-        layout: 'vertical',
-        contents: [],
-        margin: 'sm'
       }
-    ]
+    ],
+    flex: 0
   }
 }
