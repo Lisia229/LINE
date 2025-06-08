@@ -5,7 +5,7 @@ import writejson from '../utils/writejson.js'
 
 export default async event => {
   try {
-    const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/')
+    const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/game-updates/')
     const $ = cheerio.load(data)
     const news = []
 
@@ -13,10 +13,10 @@ export default async event => {
       if (i >= 12) return false
 
       const bubble = JSON.parse(JSON.stringify(templates))
+      const href = $(this).attr('href') || ''
       const imgSrc = $(this).find('img').attr('src') || ''
       const imgAlt = $(this).find('img').attr('alt') || '激鬥峽谷新聞'
-      const dateText = $(this).find('.NewsCard-module--date--').text().trim() || ''
-      const href = $(this).attr('href') || ''
+      const dateText = $(this).find('time').text().trim() || ''
 
       bubble.hero.url = imgSrc
       bubble.body.contents[0].text = imgAlt
@@ -26,9 +26,13 @@ export default async event => {
       news.push(bubble)
     })
 
+    if (news.length === 0) {
+      console.error('❌ 目前沒有抓到任何新聞，可能是選擇器錯誤或網站改版！')
+    }
+
     const reply = {
       type: 'flex',
-      altText: '最新消息',
+      altText: '最新遊戲更新',
       contents: {
         type: 'carousel',
         contents: news
@@ -38,6 +42,6 @@ export default async event => {
     await event.reply(reply)
     writejson(reply, 'news')
   } catch (error) {
-    console.error('取得最新消息失敗：', error.message)
+    console.error('取得最新消息失敗：', error)
   }
 }
