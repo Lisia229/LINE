@@ -9,11 +9,13 @@ export default async event => {
     const $ = cheerio.load(data)
     const news = []
 
-    $('.sc-362cdf8e-0.hSAVYW a').each(function (i) {
-      if (i >= 3) return false
+    $('a[data-testid="card-link"]').each(function (i) {
+      if (i >= 6) return false
 
       const $card = $(this)
-      const image = $card.find('img').attr('src')
+      const imageSrc = $card.find('img').attr('src')
+      const image = imageSrc && imageSrc.startsWith('http') ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png' // 預設圖片
+
       const title = $card.find('[data-testid="card-title"]').text().trim()
       const date = $card.find('[data-testid="card-date"] time').text().trim()
       const href = $card.attr('href')
@@ -22,29 +24,16 @@ export default async event => {
 
       console.log({ image, title, date, href, category, description })
 
-      // 如果關鍵資料缺失，就跳過這筆
-      if (!image || !title || !href) {
-        console.warn(`第${i + 1}筆資料不完整，跳過`)
-        return
-      }
-
       const bubble = JSON.parse(JSON.stringify(templates))
       bubble.hero.url = image
       bubble.body.contents[0].text = category || '最新消息'
       bubble.body.contents[1].text = title
       bubble.body.contents[2].text = '日期：' + date
       bubble.body.contents[3].text = description || '詳情請點擊閱讀詳情。'
-
-      // 確保href是完整URL
-      bubble.footer.contents[0].action.uri = href.startsWith('http') ? href : 'https://wildrift.leagueoflegends.com' + href
+      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + href
 
       news.push(bubble)
     })
-
-    if (news.length === 0) {
-      await event.reply('沒有抓到任何有效的新聞資料。')
-      return
-    }
 
     const reply = {
       type: 'flex',
