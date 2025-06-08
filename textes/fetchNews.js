@@ -16,7 +16,7 @@ export default async event => {
 
       const $card = $(this)
 
-      const imageSrc = $card.find('.innerWrapper img[data-testid="mediaImage"]').attr('src')?.replace(/&amp;/g, '&') || ''
+      const imageSrc = $card.find('.innerWrapper img').attr('src')?.replace(/&amp;/g, '&') || ''
       const image = imageSrc.startsWith('http') ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
 
       const title = $card.find('[data-testid="card-title"]').text().trim()
