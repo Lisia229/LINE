@@ -16,8 +16,15 @@ export default async event => {
 
       const $card = $(this)
 
-      const imageSrc = $card.find('.innerWrapper img').attr('src')?.replace(/&amp;/g, '&') || ''
-      const image = imageSrc.startsWith('http') ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
+      // 先抓所有 img 看看哪個有 src
+      let image = 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
+      $card.find('img').each(function () {
+        const src = $(this).attr('src')
+        if (src && src.startsWith('http')) {
+          image = src.replace(/&amp;/g, '&')
+          return false // 提前跳出 each
+        }
+      })
 
       const title = $card.find('[data-testid="card-title"]').text().trim()
       const date = $card.find('[data-testid="card-date"] time').text().trim()
