@@ -40,7 +40,7 @@ export default async event => {
       }
     }
 
-    event.reply(reply)
+    await event.reply(reply)
     writejson(reply, 'news')
   } catch (error) {
     console.error(error)
