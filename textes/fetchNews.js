@@ -9,7 +9,7 @@ export default async event => {
     const $ = cheerio.load(data)
     const news = []
 
-    $('.sc-362cdf8e-0.hSAVYW a.action').each(function (i) {
+    $('.sc-362cdf8e-0.hSAVYW a').each(function (i) {
       if (i >= 6) return false
 
       const $card = $(this)
