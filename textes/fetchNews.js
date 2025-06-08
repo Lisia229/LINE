@@ -31,7 +31,7 @@ export default async event => {
       const description = $card.find('[data-testid="card-description"] [data-testid="rich-text-html"]').text().trim()
 
       // 印出除錯用資料
-      console.log({ image, title, date, href, category, description })
+      // console.log({ image, title, date, href, category, description })
 
       // 使用模板複製，並帶入資料
       const bubble = JSON.parse(JSON.stringify(templates))
