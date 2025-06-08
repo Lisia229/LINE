@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt1eaff769344bff40/5f7f704c90ca8a0f01e5bf3c/alistar_champthumb.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/521babcfd1fa207714f97b8de598968ea7cb6b74-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

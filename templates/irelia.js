@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt707d4e00c70b546c/60ad28df94bb755c04c28f34/Irelia_Skin02.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/ac6a2f11de267aa915e82ccc7be4932816fb1107-1920x1080.jpg?auto=format&fit=fill&q=80&w=1920',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

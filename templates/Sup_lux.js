@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt1003680e360b100c/5f7f79fcb0ebb60f03a11601/lux_champthumb.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/34b92b48457b223a551d8df2bc080b1b87cc1c2c-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

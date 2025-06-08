@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltfb59e282310c63ed/602597505f9b2812764c3f0b/Ezreal_Skin04.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/47a84c9bc253104c72906e4b740b55f1ad3156ea-1920x1080.jpg?auto=format&fit=fill&q=80&w=1920',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

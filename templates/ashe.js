@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt370b9128e5788977/5f7f7098e7028c0f3ac46831/ashe_skin02.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/37c89a1fb057ce41bb3ab533d1461d3e0ea14a3d-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

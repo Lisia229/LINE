@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt80a285e31ef428be/6132b85d4a33fd446132a2ab/Nunu_Skin02.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data_live/b11bb5a198fb69ec6a5e9c30a695762eb028ef98-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

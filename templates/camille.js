@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt6abce9921105ebcc/5f7f7107bea0360f96bae7d2/camille_skin02.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/0a2897b6b823d039cf433bfb0664bff00029668c-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

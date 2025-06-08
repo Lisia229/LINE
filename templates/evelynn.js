@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltf804f1101d408064/5f9b3bf97ccbb036e77e6c11/evelynn_skin03.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/566ab912163e04b56251f5352a7413ff8264f180-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

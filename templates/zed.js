@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt946f359d51057ff6/5f7f7c2ae4d8ad0f2d4a5d82/zed_skin02.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c34577cdc7e5ab46b1f5890fc391a9fa76b73965-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

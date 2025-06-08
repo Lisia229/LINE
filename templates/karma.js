@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blte63ded67e618c7fc/6226657db130ac22c454cbb1/Karma_Skin01_(1).jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/8b613b8467df0af4b2ca6d8aeb7d16da9db0eacf-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

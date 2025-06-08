@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt7c0ec161f937e95b/62db0debb08306768355c0f2/Kassadin_Skin02_Splash.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/95c919558152a310eda41455ea2b03a6e38188be-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

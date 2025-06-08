@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt371a7c5bae0d7861/6025b85b5f9b2812764c3f92/JarvanIV_Skin04.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/9142639ce67e65a94f42a778a7c7ed638573f4e5-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

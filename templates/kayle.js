@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltb63c6d73ac6582ce/61aa8c3d20e8793da228dc70/Kayle_Skin02update.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/432355296949a4d71d7fe14460eb1e889788b9b8-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

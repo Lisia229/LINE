@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blte4a96c247eff02b3/5f76a07fed21e20f14408cc8/Ahri_ChampThumb.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/96355594e481745fed00b3bef747ed97ef4574c2-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt7b6d6b7c4f8919ba/61832010b23afd5860106994/Caitlyn_Skin02_splash.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/dca98c3c445ce1d9ca501c07ef64f3c84aa41376-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

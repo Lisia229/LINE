@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt41466751e9c66dac/61fadead2632163e756da242/Yuumi_Skin02_Splash.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/ceeb2319d4af264966ed4804d250cc8d36fd45d9-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

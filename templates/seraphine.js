@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/1363da3b54dd6106a8e4e318a1203e1d18070c31-1280x720.jpg?auto=format&fit=fill&q=80&w=1280',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/1363da3b54dd6106a8e4e318a1203e1d18070c31-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

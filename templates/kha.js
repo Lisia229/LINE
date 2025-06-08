@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt60eed29cb43c1d72/6089c69f17fcd110074c729e/kha-zix-skin-02.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/2fde750363a485aa460ccb77a82e85eea56c2709-1920x1134.jpg?auto=format&fit=fill&q=80&w=1920',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'

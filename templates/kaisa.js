@@ -2,7 +2,7 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt70f145e7e2c8fa2c/5f9b3d94653cea795bf9d176/kaisa_skin03.jpg',
+    url: 'https://cmsassets.rgpub.io/sanity/images/dsfx7636/game_data/c2954947d512dad3dd63c1a151b709e92d2e6f41-1280x720.jpg',
     size: 'full',
     aspectMode: 'cover',
     aspectRatio: '15:13'
