@@ -11,16 +11,14 @@ export default async event => {
     const news = []
 
     // 選擇每個新聞卡片的 a 連結，最多抓 6 筆
-    $('a[data-testid="card-link"]').each(function (i) {
+    $('.sc-362cdf8e-0.hSAVYW a').each(function (i) {
       if (i >= 6) return false
 
       const $card = $(this)
 
       // 抓圖，若無效則用預設圖
       const imageSrc = $card.find('img').attr('src')
-      const image = imageSrc && imageSrc.startsWith('http')
-        ? imageSrc
-        : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
+      const image = imageSrc && imageSrc.startsWith('http') ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
 
       // 取得卡片資訊
       const title = $card.find('[data-testid="card-title"]').text().trim()
@@ -56,7 +54,6 @@ export default async event => {
 
     // 回覆使用者
     await event.reply(reply)
-
     // 寫檔備份
     writejson(reply, 'news')
   } catch (error) {
