@@ -11,29 +11,22 @@ export default async event => {
     const news = []
 
     // 選擇每個新聞卡片的 a 連結，最多抓 6 筆
-    $('.sc-362cdf8e-0.hSAVYW a').each(function (i) {
+    $('a[data-testid="articlefeaturedcard-component"]').each(function (i) {
       if (i >= 6) return false
 
       const $card = $(this)
-      let imageSrc = $card.find('[data-testid="card-image"] img').attr('src') || ''
-      imageSrc = imageSrc.replace(/&amp;/g, '&')
 
-      const image =
-        imageSrc && (imageSrc.startsWith('http://') || imageSrc.startsWith('https://')) ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
+      const imageSrc = $card.find('[data-testid="card-image"] img').attr('src')?.replace(/&amp;/g, '&') || ''
+      const image = imageSrc.startsWith('http') ? imageSrc : 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png'
 
-      console.log('imageSrc:', imageSrc, '=> image:', image)
-
-      // 取得卡片資訊
       const title = $card.find('[data-testid="card-title"]').text().trim()
       const date = $card.find('[data-testid="card-date"] time').text().trim()
       const href = $card.attr('href')
       const category = $card.find('[data-testid="card-category"]').text().trim()
-      const description = $card.find('[data-testid="card-description"] [data-testid="rich-text-html"]').text().trim()
+      const description = $card.find('[data-testid="rich-text-html"]').text().trim()
 
-      // 印出除錯用資料
-      // console.log({ image, title, date, href, category, description })
+      console.log({ image, title, date, href, category, description })
 
-      // 使用模板複製，並帶入資料
       const bubble = JSON.parse(JSON.stringify(templates))
       bubble.hero.url = image
       bubble.body.contents[0].text = category || '最新消息'
