@@ -8,15 +8,29 @@ export default async event => {
     const { data } = await axios.get('https://wildrift.leagueoflegends.com/zh-tw/news/')
     const $ = cheerio.load(data)
     const news = []
-    $('.sc-362cdf8e-0.hSAVYW').each(function (i) {
+
+    // 抓取每一則新聞卡片 <a>
+    $('.sc-362cdf8e-0.hSAVYW a.action').each(function (i) {
       if (i >= 12) return false
+
       const bubble = JSON.parse(JSON.stringify(templates))
-      bubble.hero.url = $(this).find('img').attr('src')
-      bubble.body.contents[0].text = $(this).find('img').attr('alt')
-      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + $(this).find('.copy-01').eq(0).text()
-      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + $(this).attr('href')
+
+      const $card = $(this)
+      const image = $card.find('img').attr('src')
+      const title = $card.find('[data-testid="card-title"]').text().trim()
+      const date = $card.find('[data-testid="card-date"] time').text().trim()
+      const desc = $card.find('[data-testid="card-description"]').text().trim()
+      const href = $card.attr('href')
+
+      bubble.hero.url = image
+      bubble.body.contents[0].text = title
+      bubble.body.contents[1].contents[0].contents[0].text = '日期：' + date
+      bubble.body.contents[1].contents[1].text = desc
+      bubble.footer.contents[0].action.uri = 'https://wildrift.leagueoflegends.com' + href
+
       news.push(bubble)
     })
+
     const reply = {
       type: 'flex',
       altText: '最新消息',
@@ -25,6 +39,7 @@ export default async event => {
         contents: news
       }
     }
+
     event.reply(reply)
     writejson(reply, 'news')
   } catch (error) {
