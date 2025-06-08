@@ -15,8 +15,7 @@ export default async event => {
       if (i >= 6) return false
 
       const $card = $(this)
-
-      let imageSrc = $card.find('img').attr('src') || $card.find('img').attr('data-src') || ''
+      let imageSrc = $card.find('[data-testid="card-image"] img').attr('src') || ''
       imageSrc = imageSrc.replace(/&amp;/g, '&')
 
       const image =
