@@ -26,12 +26,12 @@ export default async event => {
       altText: '最新消息',
       contents: {
         type: 'carousel',
-        contents: news
+        contents: News
       }
     }
 
     await event.reply(reply)
-    writejson(reply, 'news')
+    writejson(reply, 'News')
   } catch (error) {
     console.error(error)
   }
